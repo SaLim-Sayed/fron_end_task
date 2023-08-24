@@ -1,0 +1,35 @@
+.section-title {
+  color: var(--main-color, #36886e);
+  /* font-size: 20px; */
+  font-size: clamp(14px, 20px, 24px);
+  font-weight: 700;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.section-sub-title {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+@media (max-width: 991.98px) {
+  .section-sub-title {
+    font-size: 25px;
+  }
+}
+
+.common-btn {
+  background-color: var(--bg-btn-color, #c0e863);
+  font-weight: 700;
+  font-size: 15px;
+  padding: 17px 30px;
+  border-radius: 9px;
+}
+
+@media (max-width: 767.98px) {
+  .common-btn {
+    padding: 13px 17px;
+    font-size: 14px;
+  }
+}

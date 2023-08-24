@@ -1,0 +1,88 @@
+section.hero {
+  text-align: center;
+  margin: 90px auto 0;
+}
+
+@media (max-width: 767.98px) {
+  section.hero {
+    margin: 60px auto 0;
+  }
+}
+
+section.hero div.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 31px;
+}
+
+section.hero div.container div.hero-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: inherit;
+  position: relative;
+}
+
+section.hero div.container div.hero-top div.hand-image-before {
+  width: 59px;
+  height: 62px;
+  position: absolute;
+  top: -8px;
+  left: -61px;
+  transform: rotate(14deg);
+}
+
+section.hero div.container div.hero-top div.hand-image-before img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 767.98px) {
+  section.hero div.container div.hero-top div.hand-image-before,
+  section.hero div.container div.hero-top div.hand-image-after {
+    display: none;
+  }
+}
+
+section.hero div.container div.hero-top div.hand-image-after {
+  width: 59px;
+  height: 62px;
+  position: absolute;
+  top: 7px;
+  right: -61px;
+}
+
+section.hero div.container div.hero-top div.hand-image-after img {
+  width: 100%;
+  height: 100%;
+}
+
+section.hero div.container form.hero-bottom {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 767.98px) {
+  section.hero div.container form.hero-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+section.hero div.container form.hero-bottom input#search-courses {
+  width: 370px;
+  padding: 17px 25px;
+  border-radius: 9px;
+}
+
+@media (max-width: 767.98px) {
+  section.hero div.container form.hero-bottom input#search-courses {
+    width: 270px;
+  }
+}
+
+section.hero div.container form.hero-bottom button.common-btn {
+  margin: 0 auto;
+}

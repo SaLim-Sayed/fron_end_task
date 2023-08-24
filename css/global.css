@@ -1,0 +1,45 @@
+/* Start variable */
+:root {
+  --main-color: #36886e;
+  --second-color: #B6B7BA;
+  --bg-main-color: #fafafa;
+  --bg-btn-color: #c0e863;
+}
+/* End variable */
+
+body {
+  font-family: sans-serif;
+  background-color: var(--bg-main-color, #fafafa);
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto 0 auto;
+}
+/* small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+::placeholder {
+  color: #ccc;
+  font-weight: 600;
+}
+
+input {
+  caret-color: var(--main-color, #36886e);
+}
